@@ -3,12 +3,6 @@
 
 import java.util.*;
 
-// Use cases will be added here
-// FILE: PalindromeCheckerApp.java
-// Base application setup
-
-import java.util.*;
-
 // ============================================================
 // UC1: Application Entry & Welcome Message
 // Concepts: class, main method, static keyword, System.out.println
@@ -81,6 +75,29 @@ class UseCase4PalindromeCheckerApp {
             System.out.println("\"" + word + "\" is a Palindrome. (Char Array / Two-Pointer)");
         } else {
             System.out.println("\"" + word + "\" is NOT a Palindrome. (Char Array / Two-Pointer)");
+        }
+    }
+}
+// ============================================================
+// UC5: Stack-Based Palindrome Checker
+// Concepts: Stack, push, pop, LIFO
+// Data Structure: Stack
+// ============================================================
+class UseCase5PalindromeCheckerApp {
+    public static void main(String[] args) {
+        String word = "noon";
+        Stack<Character> stack = new Stack<>();
+        for (char c : word.toCharArray()) {
+            stack.push(c);
+        }
+        String reversed = "";
+        while (!stack.isEmpty()) {
+            reversed = reversed + stack.pop();
+        }
+        if (word.equals(reversed)) {
+            System.out.println("\"" + word + "\" is a Palindrome. (Stack Method)");
+        } else {
+            System.out.println("\"" + word + "\" is NOT a Palindrome. (Stack Method)");
         }
     }
 }
