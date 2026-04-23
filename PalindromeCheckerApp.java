@@ -1,8 +1,6 @@
-// ============================================================
-//  FILE: PalindromeCheckerApp.java
-//  All 13 Use Cases in ONE file - run each class separately
-// ============================================================
+// FILE: PalindromeCheckerApp.java
+// Base application setup
 
 import java.util.*;
 
-// ============================================================
+// Use cases will be added here
